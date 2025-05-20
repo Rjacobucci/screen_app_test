@@ -210,7 +210,7 @@ public class UploadService extends Service {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel serviceChannel = new NotificationChannel(
                     "uploading-channel",
-                    "Screenomics Service Channel",
+                    "screen_test Service Channel",
                     NotificationManager.IMPORTANCE_LOW
             );
             serviceChannel.setSound(null, null);

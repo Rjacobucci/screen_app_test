@@ -344,7 +344,7 @@ public class MainActivity extends AppCompatActivity {
                         screenCaptureIntent.putExtra("screenDensity", mScreenDensity);
                         startForegroundService(screenCaptureIntent);
                         startActivity(new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-                        Toast.makeText(MainActivity.this, "ScreenLife Capture is running!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "screen_test is running!", Toast.LENGTH_SHORT).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -370,7 +370,7 @@ public class MainActivity extends AppCompatActivity {
             screenCaptureIntent.putExtra("screenDensity", mScreenDensity);
             startForegroundService(screenCaptureIntent);
             startActivity(new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-            Toast.makeText(this, "ScreenLife Capture is running!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "screen_test is running!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
         }

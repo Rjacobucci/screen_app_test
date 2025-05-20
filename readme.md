@@ -1,6 +1,6 @@
-# ScreenLife Capture Android App
+# screen_test Android App
 
-This repo contains the Android Application used in the ScreenLife Capture study. The application allows participants to record and upload screenshots taken every X number of seconds. The general layout of the code is explained below.
+This repo contains the Android Application used in the screen_test study. The application allows participants to record and upload screenshots taken every X number of seconds. The general layout of the code is explained below.
 
 ### Features added by Univeristy of Notre Dame, Center for Research Computing
 
