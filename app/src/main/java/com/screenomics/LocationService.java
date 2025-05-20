@@ -182,7 +182,7 @@ public class LocationService extends Service {
 
         Notification notification = new NotificationCompat.Builder(this, LOCATION_CHANNEL_ID)
                 .setContentTitle("SCREENOMICS")
-                .setContentTitle("Screenomics Location Updates Running")
+                .setContentText("Screenomics Location Updates Running")
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setContentIntent(pendingIntent)
                 .build();

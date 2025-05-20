@@ -47,8 +47,11 @@ public class Logger {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String logs = prefs.getString("logs", "");
         int eIndex = logs.lastIndexOf(":e");
+        if (eIndex == -1) return "";
+        int startIndex = Math.max(0, eIndex - 15);
         int endIndex = logs.indexOf("\n", eIndex);
-        return logs.substring(eIndex - 15, endIndex);
+        if (endIndex == -1) endIndex = logs.length();
+        return logs.substring(startIndex, endIndex);
     }
 
     public static String getAll(Context context) {
