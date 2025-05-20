@@ -23,7 +23,7 @@ This repo contains the Android Application used in the screen_test study. The ap
 | Service Name   | Purpose                                                      |
 | -------------- | ------------------------------------------------------------ |
 | CaptureService | Responsible for capturing screenshots and foreground app name every X number of seconds. Runs continously throughout the duration of the study. |
-| UploadService  | Responsible for uploading of screenshots to the cloud functions. Is triggered at certain times by `UploadScheduler` |
+| UploadService  | Responsible for uploading screenshots to the configured API endpoint (AWS API Gateway in this version). Triggered at certain times by `UploadScheduler` |
 | LocationService| Responsible for capturing GPS coordinates every 10 seconds, recording them in JSON files.  |
 
 ### Other Files
@@ -47,7 +47,7 @@ Most app-related constants are located in the `Constants` file. The constants ar
 | Constant Name       | Explanation                                   |
 | ------------------- | --------------------------------------------- |
 | REGISTER_ADDRESS    | The address of the "register" cloud function. |
-| UPLOAD_ADDRESS      | The address of the "upload" cloud function.   |
+| UPLOAD_ADDRESS      | The address of the upload API endpoint. Currently `https://10ihfcosr9.execute-api.us-east-2.amazonaws.com` |
 | COUNT_ADDRESS       | The address of the "count" cloud function.    |
 | BATCH_SIZE_DEFAULT  | TODO                                          |
 | MAX_TO_SEND_DEFAULT | TODO                                          |
