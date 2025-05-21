@@ -47,10 +47,25 @@ Most app-related constants are located in the `Constants` file. The constants ar
 | Constant Name       | Explanation                                   |
 | ------------------- | --------------------------------------------- |
 | REGISTER_ADDRESS    | The address of the "register" cloud function. |
-| UPLOAD_ADDRESS      | The address of the upload API endpoint. Currently `https://10ihfcosr9.execute-api.us-east-2.amazonaws.com` |
+| UPLOAD_ADDRESS      | The address of the upload API endpoint. Currently `https://39u9e4x1c9.execute-api.us-east-2.amazonaws.com/default/upload-function` |
 | COUNT_ADDRESS       | The address of the "count" cloud function.    |
 | BATCH_SIZE_DEFAULT  | TODO                                          |
 | MAX_TO_SEND_DEFAULT | TODO                                          |
 | MAX_BATCHES_TO_SEND | TODO                                          |
 | REQ_TIMEOUT         | TODO                                          |
+
+### Updating endpoint URLs
+
+`Constants.java` holds the API endpoints. Update these strings with your own URLs:
+
+```
+public class Constants {
+    public static final String REGISTER_ADDRESS = "<your register function URL>";
+    public static final String UPLOAD_ADDRESS = "<your upload endpoint URL>";
+    public static final String COUNT_ADDRESS = "<your count function URL>";
+    ...
+}
+```
+
+Rebuild the app after modifying the values so the new endpoints are used.
 
